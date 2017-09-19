@@ -1,9 +1,8 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: Administrator
- * Date: 2017/9/20
- * Time: 0:08
+ * User: Aaron
+ * Date: 2017/9/19
+ * Time: 22:14
  */
 include "vendor/autoload.php";
 core\Bootstrap::run();

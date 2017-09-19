@@ -1,6 +1,6 @@
 {
     "name": "aaronmusicchina/composerdemo01",
-    "description": "a mvc test project",
+    "description": "a test",
     "type": "project",
     "license": "MIT",
     "authors": [
@@ -15,8 +15,7 @@
             "core\\":"core",
             "web\\":"web"
         }
-    }
-    ,
+    },
     "minimum-stability": "dev",
     "require": {}
 }

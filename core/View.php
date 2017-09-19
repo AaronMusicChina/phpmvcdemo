@@ -2,20 +2,23 @@
 /**
  * Created by PhpStorm.
  * User: Administrator
- * Date: 2017/9/20
- * Time: 0:25
+ * Date: 2017/9/19
+ * Time: 23:11
  */
 namespace core;
 class View{
 
-    protected $files = "";
+    protected $file = "";
     protected $vars = [];
-
-    public function make($files){
-        $this->files = "view/" . $files . ".html";
+    public $mkdir = "";
+    public function make($fileStr)
+    {
+        $this->file = "views/". $this->mkdir ."/" .$fileStr.".html";
         return $this;
     }
-    public function with($key,$val){
+
+    public function with($key,$val)
+    {
         $this->vars[$key] = $val;
         return $this;
     }
@@ -23,8 +26,7 @@ class View{
     public function __toString()
     {
         extract($this->vars);
-        include $this->files;
+        include $this->file;
         return "";
     }
-
 }
