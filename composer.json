@@ -1,0 +1,22 @@
+{
+    "name": "aaronmusicchina/composerdemo01",
+    "description": "a mvc test project",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aaron",
+            "email": "boysmusic@163.com"
+        }
+    ],
+    "autoload":{
+        "files":["core/functions.php"],
+        "psr-4":{
+            "core\\":"core",
+            "web\\":"web"
+        }
+    }
+    ,
+    "minimum-stability": "dev",
+    "require": {}
+}
